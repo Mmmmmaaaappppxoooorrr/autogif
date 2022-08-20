@@ -44,7 +44,7 @@ fs.readdir("./events/", (_err, files) => {
 client.on("ready", async () => {
 
     console.log("Bot Hizmete Hazır!");
-    client.user.setActivity("RabeL 💖 Gweep Creative", { type: "WATCHING" });
+    client.user.setActivity("Auto Gif MapXor", { type: "WATCHING" });
     const rest = new REST({ version: "10" }).setToken(token);
     try {
         await rest.put(Routes.applicationCommands(client.user.id), {
