@@ -1,7 +1,7 @@
 {
-    "token":"Nzk4NDI2MzQwNzM0MjcxNDg4.Gwq7kn.heFiizeS-yYvhwaKxoO4TIMLBlVn-GRvBgwzt0", //Token Bot*
-    "ppKanal":"1009449574743687229", //pp id channel
-    "gifKanal":"1009449574743687229", //gif add channel
-    "bannerKanal":"1009449574743687229", //banner id channel
-    "sunucuId":"872563022344892426" // server id
+    "token":"Token Bot ",
+    "ppKanal":"Id Channel pp",
+    "gifKanal":"id channel gif",
+    "bannerKanal":"id banner channel",
+    "sunucuId":"Id Server"
 }
