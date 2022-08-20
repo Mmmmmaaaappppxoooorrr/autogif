@@ -25,13 +25,13 @@ module.exports = async (client) => {
         if (!client.channels.cache.get(bannerKanal)) { };
         if (res.data.banner.startsWith("a_")) {
           client.guilds?.cache?.get(sunucuId).channels?.cache?.get(bannerKanal)?.send({
-            embeds: [new MessageEmbed().setTitle(randomUser.tag).setDescription(`[Web Site](https://cdn.discordapp.com/banners/${randomUser.id}/${res.data.banner}.gif?size=4096)`)
+            embeds: [new MessageEmbed().setTitle().setDescription(`[Web Site](https://cdn.discordapp.com/banners/${randomUser.id}/${res.data.banner}.gif?size=4096)`)
               .setImage(`https://cdn.discordapp.com/banners/${randomUser.id}/${res.data.banner}.gif?size=4096`)]
           })
         }
         else {
           client.guilds?.cache?.get(sunucuId).channels?.cache?.get(bannerKanal)?.send({
-            embeds: [new MessageEmbed().setTitle(randomUser.tag).setDescription(`[Web Site](https://cdn.discordapp.com/banners/${randomUser.id}/${res.data.banner}.png?size=4096)`)
+            embeds: [new MessageEmbed().setTitle().setDescription(`[Web Site](https://cdn.discordapp.com/banners/${randomUser.id}/${res.data.banner}.png?size=4096)`)
               .setImage(`https://cdn.discordapp.com/banners/${randomUser.id}/${res.data.banner}.png?size=4096`)]
           })
         }
@@ -44,7 +44,7 @@ module.exports = async (client) => {
 
       if (!client.channels.cache.get(gifKanal)) return;
       client.guilds?.cache?.get(sunucuId).channels?.cache?.get(gifKanal)?.send({
-        embeds: [new MessageEmbed().setTitle(randomUser.tag).setDescription(`[Web Site](${randomUser.avatarURL({ dynamic: true, size: 1024 })})`)
+        embeds: [new MessageEmbed().setTitle().setDescription(`[Web Site](${randomUser.avatarURL({ dynamic: true, size: 1024 })})`)
           .setImage(randomUser.avatarURL({ dynamic: true, size: 1024 }))]
       })
     }
